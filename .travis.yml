@@ -1,0 +1,12 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- node
+before_script:
+- npm install
+script:
+- npm run lint
+after_success:
+- wt init --container "app63474144" --url "https://sandbox-eu.it.auth0.com" --token "WEBTASK_TOKEN" -p "app63474144-eu"
+- npm run deploy
