@@ -1,13 +1,13 @@
 {
-  "name": "github-rank",
+  "name": "github",
   "version": "1.0.0",
-  "description": "Fetch my educations",
+  "description": "Fetch my github stats",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint --project .",
     "tsc": "rimraf dist && tsc --p .",
-    "deploy": "wt update github-rank dist/index.js -p \"app63474144-eu\" -b",
+    "deploy": "wt update github dist/index.js -p \"app63474144-eu\" -b",
     "build": "npm run tsc && copyfiles package.json dist",
     "spell": "cspell \"src/**/!(*.wav|*.mp3).*\""
   },
@@ -35,6 +35,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cheerio": "^1.0.0-rc.2",
+    "github": "^13.0.1",
     "mongoose": "^4.13.5",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
