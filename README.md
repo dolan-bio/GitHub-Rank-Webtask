@@ -1,3 +1,3 @@
-# Github Rank Webtask
+# Github Webtask
 
-> Tool to fetch my github rank
+> Tool to fetch my github stats
